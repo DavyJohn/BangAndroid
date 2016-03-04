@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_input_height"
+        android:layout_marginLeft="@dimen/login_input_matgin_left_right"
+        android:layout_marginRight="@dimen/login_input_matgin_left_right"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/login_input_bg">
+
+        <TextView
+            android:id="@+id/login_un_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="@string/login_username_txt"
+            android:layout_alignParentLeft="true"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/login_username_et"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/login_username_input"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/login_un_txt"
+            android:background="@null"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/login_phonecode_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/login_phonecode_btn"
+            android:textSize="12sp"
+            android:background="@drawable/login_yzm_bg"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_input_height"
+        android:layout_marginLeft="@dimen/login_input_matgin_left_right"
+        android:layout_marginRight="@dimen/login_input_matgin_left_right"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/login_input_bg">
+
+        <TextView
+            android:id="@+id/login_pc_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="@string/login_phonecode_txt"
+            android:layout_alignParentLeft="true"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/login_phonecode_et"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/login_phonecode_input"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/login_pc_txt"
+            android:background="@null"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_input_height"
+        android:layout_marginLeft="@dimen/login_input_matgin_left_right"
+        android:layout_marginRight="@dimen/login_input_matgin_left_right"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/login_btn_bg">
+
+    </ImageButton>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">iBangAndroid</string>
+    <string name="warn_dialog_btn_tex">知道了</string>
+
+    <!--login layout-->
+    <string name="login_username_txt">手机号码</string>
+    <string name="login_phonecode_txt">验证码</string>
+    <string name="login_phonecode_btn">获取验证码</string>
+    <string name="login_btn">登陆</string>
+    <string name="login_username_input">输入手机号码</string>
+    <string name="login_phonecode_input">输入验证码</string>
+    <string name="title_activity_login">登陆</string>
+</resources>
