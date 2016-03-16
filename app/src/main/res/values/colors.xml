@@ -6,4 +6,12 @@
 
     <color name="progressBarColor">#A5DC86</color>
     <color name="white">#ffffff</color>
+    <color name="red">#f17221</color>
+    <color name="blue">#69c6b4</color>
+    <color name="background">#eaeaea</color>
+    <color name="text_white">#f7f7f7f7</color>
+    <color name="text_red">#f34747</color>
+    <color name="text_black">#000000</color>
+    <color name="divide">#ffe4e4e4</color>
+
 </resources>

@@ -1,11 +1,15 @@
 package com.saint.netlibrary;
 
 import com.saint.netlibrary.model.Demo;
+import com.saint.netlibrary.model.DemoPerson;
 
 import retrofit2.Response;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
+import retrofit2.http.Query;
 import rx.Observable;
 
 /**
@@ -22,6 +26,18 @@ public interface APIService {
     @POST("test")
     Observable<Response<Demo>> test(@Field("name") String name,@Field("age") int age);
 
+    //demoPost
+    @FormUrlEncoded
+    @POST("test")
+    Observable<Response<DemoPerson>> test4(@Field("name")String name ,@Field("age") int age);
+
+
+
+    @GET("test/echo{?message}")
+    Observable<Response<String>> DemoGet(@Query("message")String message);
+
+    @GET("test/{id}")
+    Observable<Response<String>> DemoGet1(@Path("id")String id);
     /*************测试块*************/
 
     /**

@@ -4,7 +4,7 @@
     package="com.saint.ibangandroid">
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".BangApplication"
@@ -14,12 +14,42 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon,android:theme">
-        <activity android:name=".LoginActivity">
+        <activity
+            android:name=".splash.BangSplash"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".main.MainActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".dinner.Shops"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".dinner.DinnerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".dinner.Appointment"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".dinner.Dishes"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DemoActicity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 

@@ -45,6 +45,7 @@ public abstract class BangBaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ButterKnife.bind(this);
         baseApplication = (BangApplication)this.getApplication();
         mContext = baseApplication.getAppContext();
         baseApplication.addActivity(this);

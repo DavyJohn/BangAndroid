@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/blue"
+        android:id="@+id/relativeLayout9">
+        <ImageButton
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:background="@drawable/backarrow_black"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/backbutton" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预约"
+            android:textColor="@color/text_white"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView41" />
+    </RelativeLayout>
+    <include layout="@layout/mtabhost_layout"
+        android:layout_below="@+id/relativeLayout9"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent" />
+
+
+
+</RelativeLayout>

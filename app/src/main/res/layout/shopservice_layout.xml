@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/blue">
+        <ImageButton
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:id="@+id/back"
+            android:background="@drawable/backarrow_black"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺详情"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/collection_sel"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="19dp"
+            android:layout_alignTop="@+id/back"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/collection"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/display_bg">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/testimage"
+            android:id="@+id/imageView18"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="巴蜀传香"
+            android:textSize="20sp"
+            android:id="@+id/textView19"
+            android:layout_alignTop="@+id/imageView18"
+            android:layout_toRightOf="@+id/imageView18"
+            android:layout_toEndOf="@+id/imageView18"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView18"
+            android:layout_alignLeft="@+id/textView19"
+            android:layout_alignStart="@+id/textView19"
+            android:id="@+id/linearLayout">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/star_red"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/star_red"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/star_red"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/star_gray"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/star_gray"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="川菜  68元/位"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/imageView18"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="163dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/display_bg">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="18dp"
+                android:src="@drawable/locate"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:id="@+id/imageView19" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卢湾区茂名南路59号靖江饭店"
+                android:layout_alignTop="@+id/imageView19"
+                android:layout_toRightOf="@+id/imageView19"
+                android:layout_toEndOf="@+id/imageView19"
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="21dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="18dp"
+                android:src="@drawable/time_icon"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:id="@+id/imageView20" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView20"
+                android:layout_toEndOf="@+id/imageView20"
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="21dp"
+                android:text="营业时间：10:00~22:00"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="18dp"
+                android:src="@drawable/phone"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:id="@+id/imageView21" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13218677739"
+                android:layout_alignTop="@+id/imageView21"
+                android:layout_toRightOf="@+id/imageView21"
+                android:layout_toEndOf="@+id/imageView21"
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="21dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="18dp"
+                android:src="@drawable/evaluation"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:id="@+id/imageView22" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看评价"
+                android:layout_alignTop="@+id/imageView22"
+                android:layout_toRightOf="@+id/imageView22"
+                android:layout_toEndOf="@+id/imageView22"
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="24dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/display_bg"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:id="@+id/gridview"/>
+
+
+
+</LinearLayout>

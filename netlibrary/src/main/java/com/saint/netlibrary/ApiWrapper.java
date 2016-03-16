@@ -2,6 +2,7 @@ package com.saint.netlibrary;
 
 
 import com.saint.netlibrary.model.Demo;
+import com.saint.netlibrary.model.DemoPerson;
 
 import rx.Observable;
 
@@ -18,6 +19,22 @@ public class ApiWrapper extends BangHttpClient {
     public Observable<Demo> test(String name,int age){
         return getService().test(name,age)
                 .compose(this.<Demo>applySchedulers());
+    }
+    //demoPost
+    public Observable<DemoPerson> test4(String name,int age){
+        return getService().test4(name, age)
+                .compose(this.<DemoPerson>applySchedulers());
+    }
+    //demoGet
+    public Observable<String> DemoGet(String message){
+        return getService().DemoGet(message)
+                .compose(this.<String>applySchedulers());
+
+    }
+    //demoGet1
+    public Observable<String> DemoGet1(String  id){
+        return getService().DemoGet1(id)
+                .compose(this.<String >applySchedulers());
     }
 
     /*************测试块*************/

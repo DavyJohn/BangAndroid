@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_content"
+    android:fitsSystemWindows="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        //首页标题栏
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/nav_green"
+            android:id="@+id/homelayout"
+            android:visibility="gone">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/scan_icon3x"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:id="@+id/scanning" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homepager"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/information_icon3x"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_alignBottom="@+id/scanning"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/news"/>
+        </RelativeLayout>
+        //订餐标题栏
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@color/blue"
+            android:id="@+id/dinnerlayout"
+            android:visibility="gone">
+            <ImageButton
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:background="@drawable/backarrow_black"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:id="@+id/btn_back" />
+            <TextView
+                android:layout_width="35sp"
+                android:layout_height="18sp"
+                android:text="全部"
+                android:id="@+id/all"
+                android:textColor="#ffffff"
+
+                android:layout_alignBottom="@+id/imageView24"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp" />
+            <EditText
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextshape"
+                android:hint="搜索店铺名字、类型、地址"
+                android:id="@+id/etsearch"
+                android:imeOptions="actionSearch"
+                android:textSize="10sp"
+                android:paddingLeft="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btn_back"
+                android:layout_toEndOf="@+id/btn_back"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/search"
+                android:layout_marginLeft="9dp"
+                android:layout_marginStart="9dp"
+                android:id="@+id/imageView24"
+                android:layout_alignTop="@+id/btn_back"
+                android:layout_alignLeft="@+id/etsearch"
+                android:layout_alignStart="@+id/etsearch" />
+        </RelativeLayout>
+
+
+        <bang.saint.com.recyclerlibrary.XRefreshView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/xrefreshview">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerview"/>
+        </bang.saint.com.recyclerlibrary.XRefreshView>
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

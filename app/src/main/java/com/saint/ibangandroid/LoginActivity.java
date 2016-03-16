@@ -1,11 +1,13 @@
 package com.saint.ibangandroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import com.saint.ibangandroid.main.MainActivity;
 import com.saint.ibangandroid.utils.DeviceUtil;
 import com.saint.ibangandroid.utils.StringUtil;
 import com.saint.netlibrary.ApiWrapper;
@@ -51,15 +53,18 @@ public class LoginActivity extends BangBaseActivity {
     }
 
     @OnClick(R.id.login_btn) void login(){
-        final ApiWrapper wrapper = new ApiWrapper();
-        Subscription subscription = wrapper.login(userName.getText().toString().trim()
-                                                    ,passWord.getText().toString().trim())
-                                .subscribe(newSubscriber(new Action1<String>() {
-                                    @Override
-                                    public void call(String s) {
-                                        debugLog("login:"+s);
-                                    }
-                                }));
+        startActivity(new Intent(LoginActivity.this,MainActivity.class));
+//        final ApiWrapper wrapper = new ApiWrapper();
+//        Subscription subscription = wrapper.login(userName.getText().toString().trim()
+//                                                    ,passWord.getText().toString().trim())
+//                                .subscribe(newSubscriber(new Action1<String>() {
+//                                    @Override
+//                                    public void call(String s) {
+//                                        debugLog("login:"+s);
+//                                    }
+//                                }));
+
+
 //        测试4demo
 //        Subscription subscription = wrapper.test("Helloo",100).subscribe(newSubscriber(new Action1<Demo>() {
 //            @Override
@@ -67,7 +72,9 @@ public class LoginActivity extends BangBaseActivity {
 //                debugLog("test:"+s.toString());
 //            }
 //        }));
-        mCompositeSubscription.add(subscription);
+
+
+//        mCompositeSubscription.add(subscription);
     }
 
     @Override
